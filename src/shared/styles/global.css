@@ -30,16 +30,17 @@
   /* TAMAÑOS DE FUENTE */
   --fs-hero: clamp(2.5rem, 5vw, 4.5rem);
   --fs-title: clamp(1.8rem, 3vw, 2.8rem);
+  --fs-navbar: clamp(1.5rem, 2vw, 2.5rem);
   --fs-subtitle: 1.25rem;
   --fs-body: 1rem;
   --fs-small: 0.875rem;
 
   /* ESPACIADOS */
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 32px;
-  --spacing-xl: 64px;
+  --spacing-xs: 2px;
+  --spacing-sm: 4px;
+  --spacing-md: 8px;
+  --spacing-lg: 16px;
+  --spacing-xl: 32px;
 
   /* BORDES */
   --radius-sm: 8px;
