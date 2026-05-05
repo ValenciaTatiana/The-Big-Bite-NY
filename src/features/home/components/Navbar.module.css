@@ -14,8 +14,6 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--spacing-lg);
-  background-color: var(--color-white);
-  box-shadow: 0 1px 0 color-mix(in srgb, var(--color-primary) 8%, transparent);
 }
 
 .logoContainer {
