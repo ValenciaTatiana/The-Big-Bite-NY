@@ -74,7 +74,7 @@ body {
   color: var(--text-primary);
 
   &.overflow-hidden {
-    overflow: hidden; /* Lo que este fuera del modal estara oculto y no se podra dar scroll */
+    overflow: hidden; /* Lo que esté fuera del modal estará oculto y no se podrá dar scroll */
   }
 }
 

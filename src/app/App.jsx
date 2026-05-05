@@ -1,4 +1,5 @@
-import { Navbar, Footer, Hero, ValueProps, OurProducts, CustomBox } from './ui/components'
+import { Navbar, Footer, Hero, ValueProps, OurProducts, CustomBox } from '../features/home/components'
+
 export const App = () => {
   return (
     <>
