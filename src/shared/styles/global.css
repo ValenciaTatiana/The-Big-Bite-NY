@@ -30,10 +30,10 @@
   /* TAMAÑOS DE FUENTE */
   --fs-hero: clamp(2.5rem, 5vw, 4.5rem);
   --fs-title: clamp(1.8rem, 3vw, 2.8rem);
-  --fs-navbar: clamp(1.5rem, 2vw, 2.5rem);
   --fs-subtitle: 1.25rem;
   --fs-body: 1rem;
   --fs-small: 0.875rem;
+  --fs-medium: clamp(1.5rem, 2vw, 2.5rem);
 
   /* ESPACIADOS */
   --spacing-xs: 2px;

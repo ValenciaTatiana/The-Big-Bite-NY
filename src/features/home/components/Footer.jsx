@@ -1,24 +1,25 @@
-import { FaFacebookF, FaInstagram, FaRegEnvelope } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaRegEnvelope } from 'react-icons/fa';
+import styles from './Footer.module.css'
 
 export const Footer = () => {
   return (
     <>
-      <footer className="footer">
-        <div className="footer__container">
-          <div className="footer__phrase">
-            <p className="footer__phrase-text">
-              La vida es corta. <span className="footer__phrase-text-highlight">Cómete una galleta.</span>
+      <footer className={styles.footer}>
+        <div className={styles.footerContainer}>
+          <div className={styles.footerPhrase}>
+            <p className={styles.footerPhraseText}>
+              La vida es corta. <span className={styles.footerPhraseTextHighlight}>Cómete una galleta.</span>
             </p>
           </div>
 
-          <div className="footer__social">
-            <a href="/" className="footer__social-link">
+          <div className={styles.footerSocial}>
+            <a href="/" className={styles.footerSocialLink}>
               <FaRegEnvelope />
             </a>
-            <a href="/" className="footer__social-link">
+            <a href="/" className={styles.footerSocialLink}>
               <FaFacebookF />
             </a>
-            <a href="/" className="footer__social-link">
+            <a href="/" className={styles.footerSocialLink}>
               <FaInstagram />
             </a>
           </div>
