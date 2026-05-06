@@ -3,6 +3,11 @@
     padding: var(--spacing-lg) var(--spacing-lg);
 }
 
+.valuePropsContainer {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
 .valuePropsContent {
     display: flex;
     flex-direction: column;
@@ -38,4 +43,31 @@
 
 .valuePropsItemDescription {
     color: var(--color-white);
+}
+
+/* DESKTOP */
+@media (min-width: 820px) {
+    .valuePropsContainer {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-md);
+    }
+
+    .valuePropsContent {
+        align-items: start;
+    }
+
+    .valuePropsItem {
+        display: flex;
+        gap: 0px 15px;
+    }
+
+    .valuePropsItemIcon {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        align-content: start;
+    }
 }
