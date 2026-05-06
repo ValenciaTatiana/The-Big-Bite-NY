@@ -28,12 +28,12 @@
   --font-body: 'Inter', sans-serif;
 
   /* TAMAÑOS DE FUENTE */
-  --fs-hero: clamp(2.5rem, 5vw, 4.5rem);
-  --fs-title: clamp(1.8rem, 3vw, 2.8rem);
-  --fs-subtitle: clamp(1.25rem, 2vw, 1.5rem);
-  --fs-body: clamp(1rem, 1.5vw, 1.25rem);
-  --fs-small: clamp(0.875rem, 1vw, 1rem);
-  --fs-medium: clamp(1.5rem, 2vw, 2.5rem);
+  --fs-hero: clamp(3.2rem, 6.5vw, 7rem);
+  --fs-title: clamp(2.4rem, 4.5vw, 4.8rem);
+  --fs-subtitle: clamp(1.6rem, 2.4vw, 2.3rem);
+  --fs-body: clamp(1.6rem, 1.7vw, 2rem);
+  --fs-small: clamp(1.3rem, 1.3vw, 1.6rem);
+  --fs-medium: clamp(2rem, 3.2vw, 3.6rem);
 
   /* ESPACIADOS */
   --spacing-xs: 2px;
@@ -73,6 +73,7 @@ body {
   font-family: var(--font-body);
   background-color: var(--color-white);
   color: var(--text-primary);
+  line-height: 1.5;
 
   &.overflow-hidden {
     overflow: hidden; /* Lo que esté fuera del modal estará oculto y no se podrá dar scroll */
@@ -81,7 +82,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
-  letter-spacing: -0.5px;
+  letter-spacing: -0.8px;
 }
 
 img {

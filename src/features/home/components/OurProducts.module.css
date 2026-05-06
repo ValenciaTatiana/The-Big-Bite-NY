@@ -1,0 +1,93 @@
+.ourProductsContainer{
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.ourProductsItems {
+    color: var(--color-white);
+}
+
+.ourProductsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.ourProductsItemChips {
+    background-color: var(--flavor-chips)
+}
+
+.ourProductsItemRedVelvet {
+    background-color: var(--flavor-red-velvet);
+}
+
+.ourProductsItemBrownie {
+    background-color: var(--flavor-brownie);
+}
+
+.ourProductsItemMandm {
+    background-color: var(--flavor-mym);
+}
+
+.ourProductsTitle {
+    font-family: var(--font-heading);
+    font-size: var(--fs-hero);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    line-height: 0.95;
+    color: var(--color-primary);
+    text-align: center;
+    margin: 0;
+}
+
+.ourProductsItemImage {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.ourProductsItemTitle {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+    font-weight: 900;
+    line-height: 0.95;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.ourProductsItemDescription {
+    font-family: var(--font-body);
+    font-size: var(--fs-small);
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    margin: var(--spacing-sm) 0 0;
+}
+
+.ourProductsItemContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+/*DESKTOP*/
+@media (min-width: 820px) {
+    .ourProductsItem {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .ourProductsTitle {
+        line-height: 1;
+    }
+
+    .ourProductsItemTitle {
+        line-height: 1;
+    }
+}

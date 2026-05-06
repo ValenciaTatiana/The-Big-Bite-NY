@@ -8,18 +8,21 @@
 .heroSubtitle {
     margin: 0;
     font-family: var(--font-heading);
-    font-size: var(--fs-medium);
-    font-weight: 600;
-    letter-spacing: 0.02em;
+    font-size: var(--fs-subtitle);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--color-primary);
 }
 
 .heroTitle {
-    margin: 0.5rem 0;
+    margin: 0.8rem 0;
     font-family: var(--font-heading);
     font-size: var(--fs-hero);
     font-weight: 900;
-    letter-spacing: 0.02em;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
     color: var(--color-primary);
 }
 
@@ -29,12 +32,24 @@
 }
 
 .heroDescription {
-    margin: 0;
+    margin: 0.8rem 0 0;
     font-family: var(--font-body);
-    font-size: var(--fs-body);
-    font-weight: 500;
+    font-size: clamp(1.7rem, 2vw, 2.4rem);
+    font-weight: 600;
+    line-height: 1.35;
     letter-spacing: 0.02em;
     color: var(--color-primary);
+    max-width: 30ch;
+}
+
+@media (max-width: 560px) {
+    .heroTitle {
+        line-height: 1;
+    }
+
+    .heroDescription {
+        max-width: 26ch;
+    }
 }
 
 /* DESKTOP */

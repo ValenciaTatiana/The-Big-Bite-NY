@@ -27,8 +27,11 @@
 
 .logoText {
   font-family: var(--font-heading);
-  font-size: var(--fs-title);
+  font-size: clamp(2.6rem, 4vw, 4.2rem);
   font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   color: var(--color-primary);
 }
 
@@ -108,12 +111,14 @@
 }
 
 .menuLink {
-  font-family: var(--font-body);
-  font-size: calc(50px + ((1vw - 3.75px) * 2.530744));
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 9vw, 8rem);
   font-weight: 900;
+  line-height: 0.9;
+  text-transform: uppercase;
   color: var(--color-white);
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
   padding: var(--spacing-sm) 0;
   border-radius: var(--radius-sm);
   transition: color 0.2s ease;
