@@ -1,0 +1,41 @@
+.valuePropsSection {
+    background-color: var(--color-primary);
+    padding: var(--spacing-lg) var(--spacing-lg);
+}
+
+.valuePropsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valuePropsTitle {
+    margin: 0;
+    font-size: var(--fs-title);
+    font-weight: 900;
+    line-height: 1.2;
+    color: var(--color-white);
+}
+
+.valuePropsTitleHighlight {
+    display: block;
+    color: var(--color-secondary);
+}
+
+.valuePropsDescription {
+    color: var(--color-white);
+}
+
+.valuePropsItemIcon {
+    display: grid;
+    grid-template-columns: .6fr 1fr;
+    align-items: center;
+}
+
+.valuePropsItemTitle {
+    color: var(--color-white);
+}
+
+.valuePropsItemDescription {
+    color: var(--color-white);
+}
