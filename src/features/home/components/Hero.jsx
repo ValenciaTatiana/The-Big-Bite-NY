@@ -1,5 +1,7 @@
 import styles from './Hero.module.css'
 
+import chipsAvifUrl from '../../../shared/assets/images/chips.avif'
+import chipsWebpUrl from '../../../shared/assets/images/chips.webp'
 import chipsUrl from '../../../shared/assets/images/chips.png'
 
 export const Hero = () => {
@@ -15,7 +17,11 @@ export const Hero = () => {
         {/* Carrusel de imágenes */}
         <div className={styles.heroCarousel}>
           <div className={styles.heroCarouselItem}>
-            <img src={chipsUrl} alt="Galleta 1" />
+            <picture>
+              <source srcSet={chipsAvifUrl} type="image/avif" />
+              <source srcSet={chipsWebpUrl} type="image/webp" />
+              <img src={chipsUrl} alt="Galleta 1" />
+            </picture>
           </div>
         </div>
       </div>

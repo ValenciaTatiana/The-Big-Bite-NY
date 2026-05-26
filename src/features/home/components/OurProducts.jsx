@@ -1,14 +1,26 @@
 import styles from './OurProducts.module.css';
 
-import chipsCookie from '../../../shared/assets/images/chips.png';
-import redCookie from '../../../shared/assets/images/red.png';
-import brownieCookie from '../../../shared/assets/images/brownie.png';
-import mandmCookie from '../../../shared/assets/images/m-and-m.png';
+import chipsCookieAvif from '../../../shared/assets/images/chips.avif';
+import chipsCookieWebp from '../../../shared/assets/images/chips.webp';
+import chipsCookiePng from '../../../shared/assets/images/chips.png';
+import redCookieAvif from '../../../shared/assets/images/red.avif';
+import redCookieWebp from '../../../shared/assets/images/red.webp';
+import redCookiePng from '../../../shared/assets/images/red.png';
+import brownieCookieAvif from '../../../shared/assets/images/brownie.avif';
+import brownieCookieWebp from '../../../shared/assets/images/brownie.webp';
+import brownieCookiePng from '../../../shared/assets/images/brownie.png';
+import mandmCookieAvif from '../../../shared/assets/images/m-and-m.avif';
+import mandmCookieWebp from '../../../shared/assets/images/m-and-m.webp';
+import mandmCookiePng from '../../../shared/assets/images/m-and-m.png';
 
 const PRODUCTS = [
   {
     theme: 'chips',
-    image: chipsCookie,
+    image: {
+      avif: chipsCookieAvif,
+      webp: chipsCookieWebp,
+      png: chipsCookiePng,
+    },
     alt: 'Chips Cookie',
     title: 'La clásica chunk chips',
     description:
@@ -16,7 +28,11 @@ const PRODUCTS = [
   },
   {
     theme: 'redVelvet',
-    image: redCookie,
+    image: {
+      avif: redCookieAvif,
+      webp: redCookieWebp,
+      png: redCookiePng,
+    },
     alt: 'Red Velvet Cookie',
     title: 'Explosión Red Velvet',
     description:
@@ -24,7 +40,11 @@ const PRODUCTS = [
   },
   {
     theme: 'brownie',
-    image: brownieCookie,
+    image: {
+      avif: brownieCookieAvif,
+      webp: brownieCookieWebp,
+      png: brownieCookiePng,
+    },
     alt: 'Brownie Cookie',
     title: 'Brownie Chocolate',
     description:
@@ -32,7 +52,11 @@ const PRODUCTS = [
   },
   {
     theme: 'mandm',
-    image: mandmCookie,
+    image: {
+      avif: mandmCookieAvif,
+      webp: mandmCookieWebp,
+      png: mandmCookiePng,
+    },
     alt: 'M&M Cookie',
     title: 'M&M Cookie',
     description:
@@ -62,7 +86,11 @@ export const OurProducts = () => {
             ({ theme, image, alt, title, description }) => (
               <div key={theme} className={`${styles.ourProductsItem} ${themeClassMap[theme]}`}>
                 <div className={styles.ourProductsItemImage}>
-                  <img src={image} alt={alt} />
+                  <picture>
+                    <source srcSet={image.avif} type="image/avif" />
+                    <source srcSet={image.webp} type="image/webp" />
+                    <img src={image.png} alt={alt} />
+                  </picture>
                 </div>
                 <div className={styles.ourProductsItemContent}>
                   <h3 className={styles.ourProductsItemTitle}>{title}</h3>
